@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as moment from 'moment';
-import Day from "./Day";
+import Day from "../components/Day";
 
 
 
@@ -24,6 +24,7 @@ const Calendar = () => {
     
 
     return (<>
+        <h2>Calendar</h2>
         <button onClick={() => {nextWeek()}}>{"---->"}</button>
         <button onClick={() => { lastWeek() }}>{"<----"}</button> 
         <button onClick={() => { setStateDay(moment()) }}>{"תאריך נוכחי"}</button>

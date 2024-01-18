@@ -1,6 +1,5 @@
-import Calendar from "./Calendar";
-import Login from "./Login";
-import Event from "./Event";
+import Calendar from "./pages/Calendar";
+import Login from "./pages/Login";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 

@@ -32,7 +32,6 @@ export default function ContextMenu(props) {
       <Menu
         open={contextMenu !== null}
         onClose={handleClose}
-        onClick={handleClose}
         anchorReference="anchorPosition"
         anchorPosition={
           contextMenu !== null

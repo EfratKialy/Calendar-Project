@@ -36,7 +36,8 @@ export default function Event(props) {
   } catch(err) {
       console.log(err);
     }
-  } 
+  }   
+
 
   return (
 
