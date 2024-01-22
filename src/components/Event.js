@@ -23,7 +23,7 @@ export default function Event(props) {
 
   const SaveEvent = () => {
     const e = {
-      "eventId": Math.floor(Math.random() * 1000),
+      "eventId": Math.floor(Math.random() * 10000),
       "userId": "123",
       "title": title,
       "description": description,
@@ -32,7 +32,7 @@ export default function Event(props) {
     };
     try{
     axios.post(`http://localhost:5102/Event`, e )
-    .then(res => console.log(res))  
+    .then(res =>res.statusCode==200? <h1>נוסף בהצלחה!!</h1>:<h1>נסה שוב פעם!!</h1> )  
   } catch(err) {
       console.log(err);
     }
